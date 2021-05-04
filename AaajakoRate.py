@@ -51,5 +51,5 @@ for rate in soupNME.find_all("home"):
     formattedNME=(rate["exchange_rate"])
 
 print("NK Services " + finalRate+" "+day + " -> $10 Charge")
-print("Namaste Remittance " + formattedNR + " -> $5 Charge")
+print("Namaste Remittance: " + formattedNR + " -> $5 Charge")
 print("Nepal Money Express: " + formattedNME + " -> $5 Charge")
