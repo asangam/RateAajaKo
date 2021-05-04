@@ -1,6 +1,6 @@
 ## Aaja Ko Rate / Todays Rate
- This is is a python script that will show you AUD to NPR conversion from few remit website / companies in Australia.
- I am planning to add more as I find the remit services and in future a way to find out which services to go for and some suggesstion of currencies conversion amounts. 
+ A web app to show the AUD to NPR conversion from a few remit website and services in Australia.
+ ``` AaajakoRate.Py``` hold the sole python script If anyone want to play around and ```TodaysRate.ipynb``` is my jupiter notedbook playground. 
 
- For e.g. how much will $500 AUD to NPR will be If sent from remit services A/B or C with <span style="color:teal;" >colour</span> <span style="color:red;">codes</span>.
- This is all possible with Flask integration in the project.
+### Features
+    Need to make it look good with proper html and styling now.
