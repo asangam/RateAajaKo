@@ -41,7 +41,16 @@ spaceData = unformatted.replace("\r\n","").replace("as","").replace("of","").rep
 
 finalRate = spaceData[0:20]
 
-day = spaceData[142:168]
+a = []
+for word in finalRate.split():
+    try:
+        a.append(float(word))
+    except ValueError:
+        pass
+    
+formattedNK = str(a[0])
+
+#day = spaceData[142:168]
 
 
 formattedNR = dataNR[0].getText()
@@ -50,6 +59,6 @@ formattedNR = dataNR[0].getText()
 for rate in soupNME.find_all("home"):
     formattedNME=(rate["exchange_rate"])
 
-print("NK Services " + finalRate+" "+day + " -> $10 Charge")
+print("NK Services " + formattedNK +" -> $10 Charge")
 print("Namaste Remittance: " + formattedNR + " -> $5 Charge")
 print("Nepal Money Express: " + formattedNME + " -> $5 Charge")

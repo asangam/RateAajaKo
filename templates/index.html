@@ -1,16 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaaja Ko Rate</title>
-</head>
-<body>
-    <h1>Compare Today's Rate AUD to NPR</h1>
-<p>NK Services: {{ finalRate }} </p
-<p>Namaste Remittance {{ formattedNR }} </p>
-<p>Nepali Money Express {{ formattedNME }} </p>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Compare Rates : Send Money to Nepal</title>
+  </head>
+  <body class="text-center container">
+    <h1 class="mb-5">Compare Today's Rate AUD to NPR</h1>
+    <h1 class="h3 mb- font-weight-normal">Please enter the amount:</h1>
+    <p>
+        <form action="/" method="POST">
+            <input type="number" name="aud" id="" class="form-control mb-3" style="height:50px;width:350px;display:inline;" placeholder="Amount in AUD" required autofocus>
+            <p>            <input type="submit" class=" btn btn-primary mb-4" value="Submit">
+            </p>
+        </form>
+    </p>
+        <div class="container">
+        <div class="row">
+
+          <div class="col-sm">
+              <p class="h6">NK Services:<span class="text-info font-weight-bold"> ${{formattedNK}}</span></p>
+              <input type="number" id="" value="{{nkSum}}" class="form-control text-success" placeholder="Amount in NPR" required autofocus>
+          </div>
+
+          <div class="col-sm">
+              <p class="h6">Namaste Remittance:<span class="text-info font-weight-bold"> ${{formattedNR}}</span></p>
+              <input type="number" id="" class="form-control" placeholder="Amount in NPR" required autofocus>
+          </div>
+
+          <div class="col-sm">
+              <p class="h6">Nepal Money Express:<span class="text-info font-weight-bold"> ${{formattedNME}}</span></p>
+                  <input type="number" id="" class="form-control"  placeholder="Amount in NPR" required autofocus>
+          </div>
+
+        </div>
+      </div>
+
+    </body>
 </html>
+
+
